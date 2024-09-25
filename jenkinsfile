@@ -1,0 +1,17 @@
+pipeline {
+    agent any 
+    stages {
+        stage('cleanup workspace') {
+            steps{
+                cleanWs()
+            }
+        }
+        stages {
+            stage('checkout from scm') {
+                steps {
+                    git branch: 'main', url: 'https://github.com/rukmini-jadhav/a-reddit-clone-gitops.git'
+                }
+            }
+        }
+    }
+}
