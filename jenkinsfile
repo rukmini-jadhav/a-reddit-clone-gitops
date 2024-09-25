@@ -6,12 +6,10 @@ pipeline {
                 cleanWs()
             }
         }
-        stages {
-            stage('checkout from scm') {
-                steps {
-                    git branch: 'main', url: 'https://github.com/rukmini-jadhav/a-reddit-clone-gitops.git'
+        stage('checkout from scm') {
+            steps{
+                git branch: 'main', url: 'https://github.com/rukmini-jadhav/a-reddit-clone-gitops.git'
                 }
-            }
-        }
+         }
     }
-}
+   }
