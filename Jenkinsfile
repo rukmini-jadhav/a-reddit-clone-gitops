@@ -11,5 +11,6 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/rukmini-jadhav/a-reddit-clone-gitops.git'
                 }
          }
-    }
+    
    }
+}
